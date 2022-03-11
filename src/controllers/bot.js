@@ -1,12 +1,9 @@
-import { Response } from "../utils/index";
+import fs from 'fs';
+import path from 'path';
 
-/**
- * Controller used for responding to messages
- * @param {Request} req - The request from the endpoint.
- * @param {Response} res - The response returned by the method.
-  * @returns { JSON } A JSON response containing the details of the newly created short link
- * @memberof BotController
- */
-export const foo = async (req, res) => {
-  return Response.info(res, "welcome!", 201, data);
+export const greetings = async (req, res) => {
+  const welcomeMessagePath = path.join(__dirname, '..', 'utils', 'messages', 'welcome.json');
+  const data = fs.readFileSync(welcomeMessagePath, 'utf8');
+  
+  return res.json(data);
 };

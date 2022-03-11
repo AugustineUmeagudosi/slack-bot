@@ -2,24 +2,24 @@ _metadata:
   major_version: 1
   minor_version: 1
 display_information:
-  name: slack-bot
+  name: anton
 features:
   app_home:
     home_tab_enabled: false
     messages_tab_enabled: true
     messages_tab_read_only_enabled: false
   bot_user:
-    display_name: slack-bot
+    display_name: anton
     always_online: true
   slash_commands:
     - command: /bot
-      url: https://slack-bot.herokuapp.com/messages # e.g. https://slack-bot.herokuapp.com/messages
+      url: https://slack-messenger.herokuapp.com/bot
       description: Initiate a conversation with the bot
       usage_hint: "hello"
       should_escape: false
 oauth_config:
   redirect_urls:
-    - https://slack-bot.herokuapp.com/auth/callback # e.g. https://slack-bot.herokuapp.com/auth/callback
+    - https://slack-messenger.herokuapp.com/auth/callback
   scopes:
     user:
       - channels:read
@@ -53,7 +53,7 @@ oauth_config:
 settings:
   interactivity:
     is_enabled: true
-    request_url: https://slack-bot.herokuapp.com/messages # e.g. https://slack-bot.herokuapp.com/messages
+    request_url: https://slack-messenger.herokuapp.com/bot
   org_deploy_enabled: false
   socket_mode_enabled: false
   token_rotation_enabled: false
