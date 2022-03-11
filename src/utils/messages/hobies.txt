@@ -11,7 +11,7 @@
 							"text": "Football",
 							"emoji": true
 						},
-						"value": "value-0"
+						"value": "Football"
 					},
 					{
 						"text": {
@@ -19,7 +19,7 @@
 							"text": "Music",
 							"emoji": true
 						},
-						"value": "value-1"
+						"value": "Music"
 					},
 					{
 						"text": {
@@ -27,7 +27,7 @@
 							"text": "Sleep",
 							"emoji": true
 						},
-						"value": "value-2"
+						"value": "Sleep"
 					},
 					{
 						"text": {
@@ -35,7 +35,7 @@
 							"text": "Movies",
 							"emoji": true
 						},
-						"value": "value-3"
+						"value": "Movies"
 					},
 					{
 						"text": {
@@ -43,7 +43,7 @@
 							"text": "Basketball",
 							"emoji": true
 						},
-						"value": "value-4"
+						"value": "Basketball"
 					}
 				],
 				"action_id": "checkboxes-action"

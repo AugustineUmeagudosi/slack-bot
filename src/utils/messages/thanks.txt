@@ -5,7 +5,7 @@
 			"elements": [
 				{
 					"type": "plain_text",
-					"text": "Thank you!",
+					"text": "*Thank you!",
 					"emoji": true
 				}
 			]

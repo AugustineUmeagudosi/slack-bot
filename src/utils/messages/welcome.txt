@@ -16,7 +16,7 @@
               "text": "Doing well",
               "emoji": true
             },
-            "value": "value-0"
+            "value": "Doing well"
           },
           {
             "text": {
@@ -24,7 +24,7 @@
               "text": "Neutral",
               "emoji": true
             },
-            "value": "value-1"
+            "value": "Neutral"
           },
           {
             "text": {
@@ -32,7 +32,7 @@
               "text": "Feeling lucky",
               "emoji": true
             },
-            "value": "value-2"
+            "value": "Feeling lucky"
           }
         ],
         "action_id": "static_select-action"
