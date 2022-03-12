@@ -1,5 +1,5 @@
-import Message from './message';
+import User from './users';
 
 export {
-  Message,
+  User,
 };

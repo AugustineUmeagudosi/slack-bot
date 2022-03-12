@@ -5,8 +5,8 @@ const router = Router();
 
 // bot endpoint
 router.post('/', BotController.greetings);
-
-// bot endpoint
-router.post('/messages', BotController.messages);
+router.post('/feeling', BotController.feeling);
+router.post('/hobbies', BotController.hobbies);
+router.get('/user-responses', BotController.getUserResponses);
 
 export default router;
