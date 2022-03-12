@@ -4,6 +4,7 @@ import axios from 'axios';
 import { User } from '../models';
 import { Response } from "../utils/index";
 
+// posting with webhooks  ** not in use **
 export const greetings = async (req, res) => {
   const welcomeMessagePath = path.join(__dirname, '..', 'utils', 'messages', 'welcome.txt');
   const data = fs.readFileSync(welcomeMessagePath, 'utf8');

@@ -15,17 +15,6 @@ describe('Bot Module', () => {
         await User.deleteMany();  
     });
 
-    it('Should respond to a slash command', (done) => {
-        chai.request(app)
-        .post(`${baseUrl}`)
-        .end((err, res) => {
-            const { message, status } = res.body;
-            expect(status).to.equal('success');
-            expect(message).to.equal('successFul');
-            done();
-        });
-    });
-
     it('should successfully record how a user is feeling', (done) => {
         chai.request(app)
         .post(`${baseUrl}/feeling`)
@@ -40,7 +29,7 @@ describe('Bot Module', () => {
 
     it('should successfully record user hobby', (done) => {
         chai.request(app)
-        .post(`${baseUrl}`)
+        .post(`${baseUrl}/hobbies`)
         .send(botFixtures.hobbies)
         .end((err, res) => {
             const { message, status } = res.body;

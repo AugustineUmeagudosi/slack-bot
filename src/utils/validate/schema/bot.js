@@ -1,5 +1,6 @@
 import Joi from 'joi';
 
-export const validateRequest = Joi.object().keys({
-    // longUrl: Joi.string().required(),
+export const botRequests = Joi.object().keys({
+    user: Joi.object().required(),
+    actions: Joi.array().required(),
 });
