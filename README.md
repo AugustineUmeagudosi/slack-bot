@@ -64,7 +64,7 @@ After installing node, this project will need yarn too, so just run the followin
 
 ## Running the project locally
 
-    $ run `npm run dev` to serve the app with hot reload at `localhost:3000` or `http://127.0.0.1:3000`
+    $ run `npm run dev` to serve the app with hot reload at `localhost:4000` or `http://127.0.0.1:4000`
 
 ---
 
@@ -86,7 +86,7 @@ After installing node, this project will need yarn too, so just run the followin
 
 ## Documentation
 
-    $ documentation can be found here `https://documenter.getpostman.com/view/10114803/UVkqraC9`
+    $ documentation can be found here `https://documenter.getpostman.com/view/10114803/UVsJv6ns`
     
 ---
 
