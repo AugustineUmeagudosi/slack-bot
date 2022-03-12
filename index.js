@@ -12,8 +12,6 @@ app.set('APP_PACKAGE', {
   version: appPackage.version,
 });
 
-if (!process.env.JWT_SECRET) { console.error('FATAL ERROR: jwtPrivateKey is not defined.'); process.exit(1); }
-
 expressConfig(app);
 
 app.listen(port, () => logger.info(`App listening on port ${port}...`));
