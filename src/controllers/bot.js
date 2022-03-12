@@ -24,7 +24,7 @@ export const feeling = async (req, res) => {
     newUser.feeling = actions[0].value ? actions[0].value : null;
     await newUser.save();
 
-    return Response.info(res, "successFul", 200, newUser );
+    return Response.info(res, "successFul", 201, newUser );
   }else {
     userExists.feeling = actions[0].value ? actions[0].value : null;
     await userExists.save();
