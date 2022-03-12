@@ -8,8 +8,8 @@ export const greetings = async (req, res) => {
   const welcomeMessagePath = path.join(__dirname, '..', 'utils', 'messages', 'welcome.txt');
   const data = fs.readFileSync(welcomeMessagePath, 'utf8');
 
-  axios.post(process.env.SLACK_WEBHOOK, JSON.parse(data));
-  return Response.info(res, "successFul", 200, null);
+  if(process.env.NODE_ENV == 'test') return Response.info(res, "successFul", 200, null);
+  return axios.post(process.env.SLACK_WEBHOOK, JSON.parse(data));
 };
 
 export const feeling = async (req, res) => {
