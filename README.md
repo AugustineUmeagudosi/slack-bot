@@ -1,5 +1,5 @@
 # Slack-bot API
-Apis for the url shortner app
+Apis for the slack-event-listener app
 ---
 
 ## Requirements
