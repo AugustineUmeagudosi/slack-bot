@@ -1,4 +1,4 @@
-# Url Shortner API
+# Slack-bot API
 Apis for the url shortner app
 ---
 
